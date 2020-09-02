@@ -20,7 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e98457-36f8-4531-b6a1-6a5c7d40828c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/controller/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/entity/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/mapper/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/static/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/templates/null" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +70,9 @@
     <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
   </component>
   <component name="ProjectId" id="1gwYYlHeA1zO5DwTreuVEl3fPUe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -78,6 +89,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/yiwu/src/main/resources/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -91,6 +103,15 @@
     <property name="project.structure.side.proportion" value="0.20650096" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\My programs\Java Programs\wanqing.github.io\yiwu\src\main\resources\templates" />
+      <recent name="F:\My programs\Java Programs\wanqing.github.io\yiwu\src\main\resources\static" />
+      <recent name="F:\My programs\Java Programs\wanqing.github.io\yiwu\src\main\resources\mapper" />
+      <recent name="F:\My programs\Java Programs\wanqing.github.io\yiwu\src\main\java\com\hellojava\service" />
+      <recent name="F:\My programs\Java Programs\wanqing.github.io\yiwu\src\main\java\com\hellojava\mapper" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="YiwuApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -118,6 +139,7 @@
       <workItem from="1599031233724" duration="3031000" />
       <workItem from="1599036740554" duration="309000" />
       <workItem from="1599041268210" duration="64000" />
+      <workItem from="1599055191811" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="SSMBOOT基本框架完成">
       <created>1599033059678</created>
@@ -126,11 +148,28 @@
       <option name="project" value="LOCAL" />
       <updated>1599033059678</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SSMBOOT基本框架完成">
+      <created>1599055246182</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599055246182</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -153,30 +192,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="840" y="356" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1599031240990" />
+    <state x="713" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599055431610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="713" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599055431610" />
     <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599027224855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599027224855" />
-    <state x="453" y="17" key="CommitChangelistDialog2" timestamp="1599033058824">
+    <state x="453" y="17" key="CommitChangelistDialog2" timestamp="1599055244996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="453" y="17" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599033058824" />
-    <state width="1877" height="290" key="GridCell.Tab.0.bottom" timestamp="1599037049954">
+    <state x="453" y="17" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599055244996" />
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom" timestamp="1599055350545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599037049954" />
-    <state width="1877" height="290" key="GridCell.Tab.0.center" timestamp="1599037049954">
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599055350545" />
+    <state width="1877" height="290" key="GridCell.Tab.0.center" timestamp="1599055350545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599037049954" />
-    <state width="1877" height="290" key="GridCell.Tab.0.left" timestamp="1599037049954">
+    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599055350545" />
+    <state width="1877" height="290" key="GridCell.Tab.0.left" timestamp="1599055350544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599037049954" />
-    <state width="1877" height="290" key="GridCell.Tab.0.right" timestamp="1599037049954">
+    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599055350544" />
+    <state width="1877" height="290" key="GridCell.Tab.0.right" timestamp="1599055350545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599037049954" />
+    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599055350545" />
     <state width="1877" height="290" key="GridCell.Tab.1.bottom" timestamp="1599037049955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,10 +240,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599028739926" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1599034346291">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1599055261776">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599034346291" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599055261776" />
     <state x="334" y="94" key="new project wizard" timestamp="1599027308109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
