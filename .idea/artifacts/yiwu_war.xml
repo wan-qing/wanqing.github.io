@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="yiwu:war">
+    <output-path>$PROJECT_DIR$/yiwu/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>yiwu</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="yiwu-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="yiwu:war exploded" />
+    </root>
+  </artifact>
+</component>
