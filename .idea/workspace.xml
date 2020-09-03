@@ -20,58 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e98457-36f8-4531-b6a1-6a5c7d40828c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ChatrecordDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/EvaluateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ExpressDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/FollowandfansDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/GoodsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/JurisdictionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ObjecttraceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/RolesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ShippingaddressDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ShoppingcarDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/SteponpraiseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ThumbsupDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ChatrecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/EvaluateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ExpressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/FollowandfansService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/JurisdictionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ObjecttraceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/RolesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ShippingaddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ShoppingcarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/SteponpraiseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ThumbsupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/CategoryDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ChatrecordDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/EvaluateDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ExpressDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/FollowandfansDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/GoodsDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/JurisdictionDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ObjecttraceDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/OrderDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/RolesDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ShippingaddressDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ShoppingcarDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/SteponpraiseDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ThumbsupDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/UserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/~$最终版数据表.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/最终版数据表.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/entity/null" beforeDir="false" afterPath="$PROJECT_DIR$/yiwu/mysql_create_table" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/mapper/null" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/null" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ChatrecordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/EvaluateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ExpressService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/FollowandfansService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/GoodsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/JurisdictionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ObjecttraceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/RolesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ShippingaddressService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ShoppingcarService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/SteponpraiseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ThumbsupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/UserService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +151,7 @@
       <workItem from="1599036740554" duration="309000" />
       <workItem from="1599041268210" duration="64000" />
       <workItem from="1599055191811" duration="370000" />
-      <workItem from="1599116185148" duration="7695000" />
+      <workItem from="1599116185148" duration="8191000" />
     </task>
     <task id="LOCAL-00001" summary="SSMBOOT基本框架完成">
       <created>1599033059678</created>
@@ -209,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599055528564</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="表创建完毕，entity,dao,mapper全部写了基本的增删改查。">
+      <created>1599123998436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599123998436</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +212,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="SSMBOOT基本框架完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="SSMBOOT基本框架完成" />
+    <MESSAGE value="表创建完毕，entity,dao,mapper全部写了基本的增删改查。" />
+    <option name="LAST_COMMIT_MESSAGE" value="表创建完毕，entity,dao,mapper全部写了基本的增删改查。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="840" y="356" key="#Notifications" timestamp="1599031240990">
@@ -263,10 +236,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599027224855" />
-    <state x="453" y="17" key="CommitChangelistDialog2" timestamp="1599055527888">
+    <state x="453" y="17" key="CommitChangelistDialog2" timestamp="1599123997087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="453" y="17" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599055527888" />
+    <state x="453" y="17" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599123997087" />
     <state width="619" height="274" key="GridCell.Tab.0.bottom" timestamp="1599123542807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -303,10 +276,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599028739926" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1599055538000">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1599124168073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599055538000" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599124168073" />
     <state x="334" y="94" key="new project wizard" timestamp="1599027308109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
