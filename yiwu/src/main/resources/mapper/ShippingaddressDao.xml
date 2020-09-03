@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hellojava.dao.ShippingaddressDao">
+
+    <resultMap id="BaseResultMap" type="com.hellojava.entity.Shippingaddress">
+        <!--@Table shippingaddress-->
+        <result property="addressId" column="address_id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="addressState" column="address_state" jdbcType="INTEGER"/>
+        <result property="addrProvince" column="addr_province" jdbcType="VARCHAR"/>
+        <result property="addrCity" column="addr_city" jdbcType="VARCHAR"/>
+        <result property="addrArea" column="addr_area" jdbcType="VARCHAR"/>
+        <result property="addrDetail" column="addr_detail" jdbcType="VARCHAR"/>
+        <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+        <result property="userCellphone" column="user_cellphone" jdbcType="VARCHAR"/>
+        <result property="addresscreate" column="addresscreate" jdbcType="TIMESTAMP"/>
+        <result property="yuliu" column="yuliu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          address_id, user_id, address_state, addr_province, addr_city, addr_area, addr_detail, user_name, user_cellphone, addresscreate, yuliu
+        from yiwu.shippingaddress
+        where address_id = #{addressId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          address_id, user_id, address_state, addr_province, addr_city, addr_area, addr_detail, user_name, user_cellphone, addresscreate, yuliu
+        from yiwu.shippingaddress
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          address_id, user_id, address_state, addr_province, addr_city, addr_area, addr_detail, user_name, user_cellphone, addresscreate, yuliu
+        from yiwu.shippingaddress
+        <where>
+            <if test="addressId != null">
+                and address_id = #{addressId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="addressState != null">
+                and address_state = #{addressState}
+            </if>
+            <if test="addrProvince != null and addrProvince != ''">
+                and addr_province = #{addrProvince}
+            </if>
+            <if test="addrCity != null and addrCity != ''">
+                and addr_city = #{addrCity}
+            </if>
+            <if test="addrArea != null and addrArea != ''">
+                and addr_area = #{addrArea}
+            </if>
+            <if test="addrDetail != null and addrDetail != ''">
+                and addr_detail = #{addrDetail}
+            </if>
+            <if test="userName != null and userName != ''">
+                and user_name = #{userName}
+            </if>
+            <if test="userCellphone != null and userCellphone != ''">
+                and user_cellphone = #{userCellphone}
+            </if>
+            <if test="addresscreate != null">
+                and addresscreate = #{addresscreate}
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                and yuliu = #{yuliu}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="addressId" useGeneratedKeys="true">
+        insert into yiwu.shippingaddress(user_id, address_state, addr_province, addr_city, addr_area, addr_detail, user_name, user_cellphone, addresscreate, yuliu)
+        values (#{userId}, #{addressState}, #{addrProvince}, #{addrCity}, #{addrArea}, #{addrDetail}, #{userName}, #{userCellphone}, #{addresscreate}, #{yuliu})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update yiwu.shippingaddress
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="addressState != null">
+                address_state = #{addressState},
+            </if>
+            <if test="addrProvince != null and addrProvince != ''">
+                addr_province = #{addrProvince},
+            </if>
+            <if test="addrCity != null and addrCity != ''">
+                addr_city = #{addrCity},
+            </if>
+            <if test="addrArea != null and addrArea != ''">
+                addr_area = #{addrArea},
+            </if>
+            <if test="addrDetail != null and addrDetail != ''">
+                addr_detail = #{addrDetail},
+            </if>
+            <if test="userName != null and userName != ''">
+                user_name = #{userName},
+            </if>
+            <if test="userCellphone != null and userCellphone != ''">
+                user_cellphone = #{userCellphone},
+            </if>
+            <if test="addresscreate != null">
+                addresscreate = #{addresscreate},
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                yuliu = #{yuliu},
+            </if>
+        </set>
+        where address_id = #{addressId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from yiwu.shippingaddress where address_id = #{addressId}
+    </delete>
+
+</mapper>

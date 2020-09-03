@@ -20,15 +20,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e98457-36f8-4531-b6a1-6a5c7d40828c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/controller/null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/entity/null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/mapper/null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/static/null" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/templates/null" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/CategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ChatrecordDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/EvaluateDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ExpressDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/FollowandfansDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/GoodsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/JurisdictionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ObjecttraceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/RolesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ShippingaddressDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ShoppingcarDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/SteponpraiseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/ThumbsupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ChatrecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/EvaluateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ExpressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/FollowandfansService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/JurisdictionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ObjecttraceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/RolesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ShippingaddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ShoppingcarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/SteponpraiseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/ThumbsupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/CategoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ChatrecordDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/EvaluateDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ExpressDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/FollowandfansDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/GoodsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/JurisdictionDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ObjecttraceDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/OrderDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/RolesDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ShippingaddressDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ShoppingcarDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/SteponpraiseDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/ThumbsupDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$最终版数据表.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/最终版数据表.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/entity/null" beforeDir="false" afterPath="$PROJECT_DIR$/yiwu/mysql_create_table" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/java/com/hellojava/mapper/null" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yiwu/src/main/resources/mapper/null" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +123,8 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -89,7 +134,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/yiwu/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/yiwu/src/main/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -98,6 +143,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.20650096" />
@@ -139,7 +185,8 @@
       <workItem from="1599031233724" duration="3031000" />
       <workItem from="1599036740554" duration="309000" />
       <workItem from="1599041268210" duration="64000" />
-      <workItem from="1599055191811" duration="326000" />
+      <workItem from="1599055191811" duration="370000" />
+      <workItem from="1599116185148" duration="7695000" />
     </task>
     <task id="LOCAL-00001" summary="SSMBOOT基本框架完成">
       <created>1599033059678</created>
@@ -155,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599055246182</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SSMBOOT基本框架完成">
+      <created>1599055528564</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599055528564</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +238,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="SSMBOOT基本框架完成" />
     <option name="LAST_COMMIT_MESSAGE" value="SSMBOOT基本框架完成" />
   </component>
@@ -192,34 +247,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="840" y="356" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1599031240990" />
-    <state x="713" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599055431610">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599116278550">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="713" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599055431610" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599116278550" />
+    <state x="713" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599116517572">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="713" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599116517572" />
+    <state x="210" y="299" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1599123840349">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="210" y="299" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599123840349" />
     <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599027224855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="168" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599027224855" />
-    <state x="453" y="17" key="CommitChangelistDialog2" timestamp="1599055244996">
+    <state x="453" y="17" key="CommitChangelistDialog2" timestamp="1599055527888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="453" y="17" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599055244996" />
-    <state width="1877" height="290" key="GridCell.Tab.0.bottom" timestamp="1599055350545">
+    <state x="453" y="17" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1599055527888" />
+    <state width="619" height="274" key="GridCell.Tab.0.bottom" timestamp="1599123542807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599055350545" />
-    <state width="1877" height="290" key="GridCell.Tab.0.center" timestamp="1599055350545">
+    <state width="619" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599123542807" />
+    <state width="619" height="274" key="GridCell.Tab.0.center" timestamp="1599123542806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599055350545" />
-    <state width="1877" height="290" key="GridCell.Tab.0.left" timestamp="1599055350544">
+    <state width="619" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599123542806" />
+    <state width="619" height="274" key="GridCell.Tab.0.left" timestamp="1599123542806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599055350544" />
-    <state width="1877" height="290" key="GridCell.Tab.0.right" timestamp="1599055350545">
+    <state width="619" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599123542806" />
+    <state width="619" height="274" key="GridCell.Tab.0.right" timestamp="1599123542806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599055350545" />
+    <state width="619" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599123542806" />
     <state width="1877" height="290" key="GridCell.Tab.1.bottom" timestamp="1599037049955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -240,14 +303,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599028739926" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1599055261776">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1599055538000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599055261776" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599055538000" />
     <state x="334" y="94" key="new project wizard" timestamp="1599027308109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="94" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1599027308109" />
+    <state x="136" y="244" key="run.anything.popup" timestamp="1599120539946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="136" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599120539946" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1599121951915">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599121951915" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/wanqing_github_io$YiwuApplication.ic" NAME="YiwuApplication Coverage Results" MODIFIED="1599037029985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

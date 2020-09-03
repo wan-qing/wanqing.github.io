@@ -1,0 +1,35 @@
+{
+  "name" : "Jurisdiction",
+  "originTableName" : "jurisdiction",
+  "comment" : "权限表",
+  "fullColumn" : [ {
+    "name" : "jurisdictionId",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "ktShortType" : "Int",
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "functionname",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "ktShortType" : "String",
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "yuliu",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "ktShortType" : "String",
+    "custom" : false,
+    "ext" : { }
+  } ],
+  "pkColumn" : null,
+  "otherColumn" : null,
+  "savePackageName" : "com.hellojava",
+  "savePath" : "./yiwu/src/main/java/com/hellojava",
+  "saveModelName" : "yiwu"
+}

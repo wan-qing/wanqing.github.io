@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".dao.CategoryDao">
+
+    <resultMap id="BaseResultMap" type=".entity.Category">
+        <!--@Table category-->
+        <result property="categoryId" column="category_id" jdbcType="INTEGER"/>
+        <result property="categoryName" column="category_name" jdbcType="VARCHAR"/>
+        <result property="categoryState" column="category_state" jdbcType="INTEGER"/>
+        <result property="yuliu" column="yuliu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          category_id, category_name, category_state, yuliu
+        from yiwu.category
+        where category_id = #{categoryId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          category_id, category_name, category_state, yuliu
+        from yiwu.category
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          category_id, category_name, category_state, yuliu
+        from yiwu.category
+        <where>
+            <if test="categoryId != null">
+                and category_id = #{categoryId}
+            </if>
+            <if test="categoryName != null and categoryName != ''">
+                and category_name = #{categoryName}
+            </if>
+            <if test="categoryState != null">
+                and category_state = #{categoryState}
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                and yuliu = #{yuliu}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="categoryId" useGeneratedKeys="true">
+        insert into yiwu.category(category_name, category_state, yuliu)
+        values (#{categoryName}, #{categoryState}, #{yuliu})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update yiwu.category
+        <set>
+            <if test="categoryName != null and categoryName != ''">
+                category_name = #{categoryName},
+            </if>
+            <if test="categoryState != null">
+                category_state = #{categoryState},
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                yuliu = #{yuliu},
+            </if>
+        </set>
+        where category_id = #{categoryId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from yiwu.category where category_id = #{categoryId}
+    </delete>
+
+</mapper>

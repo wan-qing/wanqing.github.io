@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hellojava.dao.ShoppingcarDao">
+
+    <resultMap id="BaseResultMap" type="com.hellojava.entity.Shoppingcar">
+        <!--@Table shoppingcar-->
+        <result property="buyGoodsId" column="buy_goods_id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="goodsId" column="goods_id" jdbcType="INTEGER"/>
+        <result property="goodsAddtime" column="goods_addtime" jdbcType="TIMESTAMP"/>
+        <result property="goodsDeletetime" column="goods_deletetime" jdbcType="TIMESTAMP"/>
+        <result property="yuliu" column="yuliu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          buy_goods_id, user_id, goods_id, goods_addtime, goods_deletetime, yuliu
+        from yiwu.shoppingcar
+        where buy_goods_id = #{buyGoodsId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          buy_goods_id, user_id, goods_id, goods_addtime, goods_deletetime, yuliu
+        from yiwu.shoppingcar
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          buy_goods_id, user_id, goods_id, goods_addtime, goods_deletetime, yuliu
+        from yiwu.shoppingcar
+        <where>
+            <if test="buyGoodsId != null">
+                and buy_goods_id = #{buyGoodsId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="goodsId != null">
+                and goods_id = #{goodsId}
+            </if>
+            <if test="goodsAddtime != null">
+                and goods_addtime = #{goodsAddtime}
+            </if>
+            <if test="goodsDeletetime != null">
+                and goods_deletetime = #{goodsDeletetime}
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                and yuliu = #{yuliu}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="buyGoodsId" useGeneratedKeys="true">
+        insert into yiwu.shoppingcar(user_id, goods_id, goods_addtime, goods_deletetime, yuliu)
+        values (#{userId}, #{goodsId}, #{goodsAddtime}, #{goodsDeletetime}, #{yuliu})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update yiwu.shoppingcar
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="goodsId != null">
+                goods_id = #{goodsId},
+            </if>
+            <if test="goodsAddtime != null">
+                goods_addtime = #{goodsAddtime},
+            </if>
+            <if test="goodsDeletetime != null">
+                goods_deletetime = #{goodsDeletetime},
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                yuliu = #{yuliu},
+            </if>
+        </set>
+        where buy_goods_id = #{buyGoodsId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from yiwu.shoppingcar where buy_goods_id = #{buyGoodsId}
+    </delete>
+
+</mapper>

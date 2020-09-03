@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hellojava.dao.ExpressDao">
+
+    <resultMap id="BaseResultMap" type="com.hellojava.entity.Express">
+        <!--@Table express-->
+        <result property="expressId" column="express_id" jdbcType="INTEGER"/>
+        <result property="addressId" column="address_id" jdbcType="INTEGER"/>
+        <result property="expressCompany" column="express_company" jdbcType="INTEGER"/>
+        <result property="courierNumber" column="courier_number" jdbcType="VARCHAR"/>
+        <result property="sponsorDeliveryTime" column="sponsor_delivery_time" jdbcType="TIMESTAMP"/>
+        <result property="confirmerRequesttime" column="confirmer_requesttime" jdbcType="TIMESTAMP"/>
+        <result property="receivingtimeOfInitiator" column="receivingtime_of_initiator" jdbcType="TIMESTAMP"/>
+        <result property="confirmationRequestReceivingTime" column="confirmation_request_receiving_time" jdbcType="TIMESTAMP"/>
+        <result property="yuliu" column="yuliu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          express_id, address_id, express_company, courier_number, sponsor_delivery_time, confirmer_requesttime, receivingtime_of_initiator, confirmation_request_receiving_time, yuliu
+        from yiwu.express
+        where express_id = #{expressId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          express_id, address_id, express_company, courier_number, sponsor_delivery_time, confirmer_requesttime, receivingtime_of_initiator, confirmation_request_receiving_time, yuliu
+        from yiwu.express
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          express_id, address_id, express_company, courier_number, sponsor_delivery_time, confirmer_requesttime, receivingtime_of_initiator, confirmation_request_receiving_time, yuliu
+        from yiwu.express
+        <where>
+            <if test="expressId != null">
+                and express_id = #{expressId}
+            </if>
+            <if test="addressId != null">
+                and address_id = #{addressId}
+            </if>
+            <if test="expressCompany != null">
+                and express_company = #{expressCompany}
+            </if>
+            <if test="courierNumber != null and courierNumber != ''">
+                and courier_number = #{courierNumber}
+            </if>
+            <if test="sponsorDeliveryTime != null">
+                and sponsor_delivery_time = #{sponsorDeliveryTime}
+            </if>
+            <if test="confirmerRequesttime != null">
+                and confirmer_requesttime = #{confirmerRequesttime}
+            </if>
+            <if test="receivingtimeOfInitiator != null">
+                and receivingtime_of_initiator = #{receivingtimeOfInitiator}
+            </if>
+            <if test="confirmationRequestReceivingTime != null">
+                and confirmation_request_receiving_time = #{confirmationRequestReceivingTime}
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                and yuliu = #{yuliu}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="expressId" useGeneratedKeys="true">
+        insert into yiwu.express(address_id, express_company, courier_number, sponsor_delivery_time, confirmer_requesttime, receivingtime_of_initiator, confirmation_request_receiving_time, yuliu)
+        values (#{addressId}, #{expressCompany}, #{courierNumber}, #{sponsorDeliveryTime}, #{confirmerRequesttime}, #{receivingtimeOfInitiator}, #{confirmationRequestReceivingTime}, #{yuliu})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update yiwu.express
+        <set>
+            <if test="addressId != null">
+                address_id = #{addressId},
+            </if>
+            <if test="expressCompany != null">
+                express_company = #{expressCompany},
+            </if>
+            <if test="courierNumber != null and courierNumber != ''">
+                courier_number = #{courierNumber},
+            </if>
+            <if test="sponsorDeliveryTime != null">
+                sponsor_delivery_time = #{sponsorDeliveryTime},
+            </if>
+            <if test="confirmerRequesttime != null">
+                confirmer_requesttime = #{confirmerRequesttime},
+            </if>
+            <if test="receivingtimeOfInitiator != null">
+                receivingtime_of_initiator = #{receivingtimeOfInitiator},
+            </if>
+            <if test="confirmationRequestReceivingTime != null">
+                confirmation_request_receiving_time = #{confirmationRequestReceivingTime},
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                yuliu = #{yuliu},
+            </if>
+        </set>
+        where express_id = #{expressId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from yiwu.express where express_id = #{expressId}
+    </delete>
+
+</mapper>

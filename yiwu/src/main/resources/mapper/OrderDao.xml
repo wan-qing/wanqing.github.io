@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hellojava.dao.OrderDao">
+
+    <resultMap id="BaseResultMap" type="com.hellojava.entity.Order">
+        <!--@Table order-->
+        <result property="orderId" column="order_id" jdbcType="INTEGER"/>
+        <result property="title" column="title" jdbcType="VARCHAR"/>
+        <result property="orderGroup" column="order_group" jdbcType="INTEGER"/>
+        <result property="addTime" column="add_time" jdbcType="TIMESTAMP"/>
+        <result property="info" column="info" jdbcType="VARCHAR"/>
+        <result property="img" column="img" jdbcType="VARCHAR"/>
+        <result property="createPeople" column="create_people" jdbcType="INTEGER"/>
+        <result property="buyPeople" column="buy_people" jdbcType="INTEGER"/>
+        <result property="state" column="state" jdbcType="OTHER"/>
+        <result property="buyTime" column="buy_time" jdbcType="TIMESTAMP"/>
+        <result property="sureTime" column="sure_time" jdbcType="TIMESTAMP"/>
+        <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+        <result property="createAddressid" column="create_addressid" jdbcType="INTEGER"/>
+        <result property="buyAddressid" column="buy_addressid" jdbcType="INTEGER"/>
+        <result property="yuliu" column="yuliu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          order_id, title, order_group, add_time, info, img, create_people, buy_people, state, buy_time, sure_time, end_time, create_addressid, buy_addressid, yuliu
+        from yiwu.order
+        where order_id = #{orderId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          order_id, title, order_group, add_time, info, img, create_people, buy_people, state, buy_time, sure_time, end_time, create_addressid, buy_addressid, yuliu
+        from yiwu.order
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          order_id, title, order_group, add_time, info, img, create_people, buy_people, state, buy_time, sure_time, end_time, create_addressid, buy_addressid, yuliu
+        from yiwu.order
+        <where>
+            <if test="orderId != null">
+                and order_id = #{orderId}
+            </if>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="orderGroup != null">
+                and order_group = #{orderGroup}
+            </if>
+            <if test="addTime != null">
+                and add_time = #{addTime}
+            </if>
+            <if test="info != null and info != ''">
+                and info = #{info}
+            </if>
+            <if test="img != null and img != ''">
+                and img = #{img}
+            </if>
+            <if test="createPeople != null">
+                and create_people = #{createPeople}
+            </if>
+            <if test="buyPeople != null">
+                and buy_people = #{buyPeople}
+            </if>
+            <if test="state != null">
+                and state = #{state}
+            </if>
+            <if test="buyTime != null">
+                and buy_time = #{buyTime}
+            </if>
+            <if test="sureTime != null">
+                and sure_time = #{sureTime}
+            </if>
+            <if test="endTime != null">
+                and end_time = #{endTime}
+            </if>
+            <if test="createAddressid != null">
+                and create_addressid = #{createAddressid}
+            </if>
+            <if test="buyAddressid != null">
+                and buy_addressid = #{buyAddressid}
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                and yuliu = #{yuliu}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="orderId" useGeneratedKeys="true">
+        insert into yiwu.order(title, order_group, add_time, info, img, create_people, buy_people, state, buy_time, sure_time, end_time, create_addressid, buy_addressid, yuliu)
+        values (#{title}, #{orderGroup}, #{addTime}, #{info}, #{img}, #{createPeople}, #{buyPeople}, #{state}, #{buyTime}, #{sureTime}, #{endTime}, #{createAddressid}, #{buyAddressid}, #{yuliu})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update yiwu.order
+        <set>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="orderGroup != null">
+                order_group = #{orderGroup},
+            </if>
+            <if test="addTime != null">
+                add_time = #{addTime},
+            </if>
+            <if test="info != null and info != ''">
+                info = #{info},
+            </if>
+            <if test="img != null and img != ''">
+                img = #{img},
+            </if>
+            <if test="createPeople != null">
+                create_people = #{createPeople},
+            </if>
+            <if test="buyPeople != null">
+                buy_people = #{buyPeople},
+            </if>
+            <if test="state != null">
+                state = #{state},
+            </if>
+            <if test="buyTime != null">
+                buy_time = #{buyTime},
+            </if>
+            <if test="sureTime != null">
+                sure_time = #{sureTime},
+            </if>
+            <if test="endTime != null">
+                end_time = #{endTime},
+            </if>
+            <if test="createAddressid != null">
+                create_addressid = #{createAddressid},
+            </if>
+            <if test="buyAddressid != null">
+                buy_addressid = #{buyAddressid},
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                yuliu = #{yuliu},
+            </if>
+        </set>
+        where order_id = #{orderId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from yiwu.order where order_id = #{orderId}
+    </delete>
+
+</mapper>

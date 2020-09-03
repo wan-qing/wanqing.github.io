@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hellojava.dao.ObjecttraceDao">
+
+    <resultMap id="BaseResultMap" type="com.hellojava.entity.Objecttrace">
+        <!--@Table objecttrace-->
+        <result property="traceId" column="trace_id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="goodsId" column="goods_id" jdbcType="INTEGER"/>
+        <result property="browseTime" column="browse_time" jdbcType="TIMESTAMP"/>
+        <result property="yuliu" column="yuliu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          trace_id, user_id, goods_id, browse_time, yuliu
+        from yiwu.objecttrace
+        where trace_id = #{traceId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          trace_id, user_id, goods_id, browse_time, yuliu
+        from yiwu.objecttrace
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          trace_id, user_id, goods_id, browse_time, yuliu
+        from yiwu.objecttrace
+        <where>
+            <if test="traceId != null">
+                and trace_id = #{traceId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="goodsId != null">
+                and goods_id = #{goodsId}
+            </if>
+            <if test="browseTime != null">
+                and browse_time = #{browseTime}
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                and yuliu = #{yuliu}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="traceId" useGeneratedKeys="true">
+        insert into yiwu.objecttrace(user_id, goods_id, browse_time, yuliu)
+        values (#{userId}, #{goodsId}, #{browseTime}, #{yuliu})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update yiwu.objecttrace
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="goodsId != null">
+                goods_id = #{goodsId},
+            </if>
+            <if test="browseTime != null">
+                browse_time = #{browseTime},
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                yuliu = #{yuliu},
+            </if>
+        </set>
+        where trace_id = #{traceId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from yiwu.objecttrace where trace_id = #{traceId}
+    </delete>
+
+</mapper>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hellojava.dao.SteponpraiseDao">
+
+    <resultMap id="BaseResultMap" type="com.hellojava.entity.Steponpraise">
+        <!--@Table steponpraise-->
+        <result property="bottomId" column="bottom_id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="buserId" column="buser_id" jdbcType="INTEGER"/>
+        <result property="bottomCreatetime" column="bottom_createtime" jdbcType="TIMESTAMP"/>
+        <result property="yuliu" column="yuliu" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          bottom_id, user_id, buser_id, bottom_createtime, yuliu
+        from yiwu.steponpraise
+        where bottom_id = #{bottomId}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          bottom_id, user_id, buser_id, bottom_createtime, yuliu
+        from yiwu.steponpraise
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          bottom_id, user_id, buser_id, bottom_createtime, yuliu
+        from yiwu.steponpraise
+        <where>
+            <if test="bottomId != null">
+                and bottom_id = #{bottomId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="buserId != null">
+                and buser_id = #{buserId}
+            </if>
+            <if test="bottomCreatetime != null">
+                and bottom_createtime = #{bottomCreatetime}
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                and yuliu = #{yuliu}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="bottomId" useGeneratedKeys="true">
+        insert into yiwu.steponpraise(user_id, buser_id, bottom_createtime, yuliu)
+        values (#{userId}, #{buserId}, #{bottomCreatetime}, #{yuliu})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update yiwu.steponpraise
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="buserId != null">
+                buser_id = #{buserId},
+            </if>
+            <if test="bottomCreatetime != null">
+                bottom_createtime = #{bottomCreatetime},
+            </if>
+            <if test="yuliu != null and yuliu != ''">
+                yuliu = #{yuliu},
+            </if>
+        </set>
+        where bottom_id = #{bottomId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from yiwu.steponpraise where bottom_id = #{bottomId}
+    </delete>
+
+</mapper>
