@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 点赞表(Thumbsup)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:57
+ * @since 2020-09-08 23:29:35
  */
 public class Thumbsup implements Serializable {
-    private static final long serialVersionUID = 283007628137190836L;
+    private static final long serialVersionUID = -64889082980604022L;
     /**
     * 点赞id
     */

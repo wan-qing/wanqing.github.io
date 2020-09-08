@@ -5,10 +5,10 @@
            有外键的都靠后放。简单表都在前面
            没有用到default属性，建议可添
  */
-drop table if exists jurisdiction,roles,user,
-    goods,category,shippingaddress,chatrecord,
-    followandfans,thumbsup,steponpraise,`order`,
-    objecttrace,evaluate,express;
+drop table if exists `order`,express,roles,
+    shippingaddress,
+    followandfans,thumbsup,steponpraise,
+    objecttrace,evaluate,shoppingcar,goods,category,user,chatrecord,jurisdiction;
 
 #权限表
 create table jurisdiction
@@ -51,6 +51,15 @@ create table user
     constraint PK_USER primary key (user_id)
 ) comment ='用户表';
 
+create table category
+(
+    category_id    int auto_increment comment '分类id',
+    category_name  varchar(32) not null comment '分类名字',
+    category_state int         not null comment '0:禁用；1:启用',
+    yuliu          varchar(512),
+    constraint PK_CATEGORY primary key (category_id)
+) comment ='分类表';
+
 #商品拥有外键————用户id
 create table goods
 (
@@ -67,17 +76,11 @@ create table goods
     goods_show       int           not null comment '0:禁用（隐藏）；1:启用（显示）',
     yuliu            varchar(512),
     constraint PK_GOODS primary key (goods_id),
-    constraint FK_GOODS_USER foreign key (user_id) references user (user_id)
+    constraint FK_GOODS_USER foreign key (user_id) references user (user_id),
+    constraint FK_GOODS_CATEGORY foreign key (category_id) references category(category_id)
 ) comment ='商品表';
 
-create table category
-(
-    category_id    int auto_increment comment '分类id',
-    category_name  varchar(32) not null comment '分类名字',
-    category_state int         not null comment '0:禁用；1:启用',
-    yuliu          varchar(512),
-    constraint PK_CATEGORY primary key (category_id)
-) comment ='分类表';
+
 
 create table shippingaddress
 (
@@ -221,10 +224,3 @@ create table express
     constraint PK_EXPRESS primary key (express_id),
     constraint FK_EXPRESS_ADDRESS foreign key (address_id) references shippingaddress (address_id)
 ) comment ='快递表';
-
-
-
-
-
-
-

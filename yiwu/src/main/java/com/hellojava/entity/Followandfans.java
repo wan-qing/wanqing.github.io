@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 关注与粉丝表(Followandfans)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:56
+ * @since 2020-09-08 23:29:34
  */
 public class Followandfans implements Serializable {
-    private static final long serialVersionUID = -79900808515890982L;
+    private static final long serialVersionUID = -35062524841652614L;
     /**
     * 关&粉id
     */

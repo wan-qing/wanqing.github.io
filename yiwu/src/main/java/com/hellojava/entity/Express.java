@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 快递表(Express)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:56
+ * @since 2020-09-08 23:29:34
  */
 public class Express implements Serializable {
-    private static final long serialVersionUID = -69697382700476183L;
+    private static final long serialVersionUID = 317099946774057612L;
     /**
     * 快递id
     */

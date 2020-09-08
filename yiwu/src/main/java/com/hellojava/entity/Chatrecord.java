@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 聊天记录表(Chatrecord)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:56
+ * @since 2020-09-08 23:29:34
  */
 public class Chatrecord implements Serializable {
-    private static final long serialVersionUID = 733290509038780615L;
+    private static final long serialVersionUID = 459090204670922786L;
     /**
     * 聊天id
     */

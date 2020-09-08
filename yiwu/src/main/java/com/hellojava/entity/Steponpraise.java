@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 踩赞表(Steponpraise)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:56
+ * @since 2020-09-08 23:29:35
  */
 public class Steponpraise implements Serializable {
-    private static final long serialVersionUID = 592791081159150376L;
+    private static final long serialVersionUID = -18113825633709593L;
     /**
     * 踩赞id
     */

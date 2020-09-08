@@ -73,7 +73,6 @@
             <version>1.2.5</version>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -82,5 +81,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

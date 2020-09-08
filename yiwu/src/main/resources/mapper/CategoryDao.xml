@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace=".dao.CategoryDao">
+<mapper namespace="com.hellojava.dao.CategoryDao">
 
-    <resultMap id="BaseResultMap" type=".entity.Category">
+    <resultMap id="BaseResultMap" type="com.hellojava.entity.Category">
         <!--@Table category-->
         <result property="categoryId" column="category_id" jdbcType="INTEGER"/>
         <result property="categoryName" column="category_name" jdbcType="VARCHAR"/>

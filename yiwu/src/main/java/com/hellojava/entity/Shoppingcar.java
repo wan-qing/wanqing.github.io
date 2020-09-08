@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 购物车表(Shoppingcar)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:56
+ * @since 2020-09-08 23:29:35
  */
 public class Shoppingcar implements Serializable {
-    private static final long serialVersionUID = 673900406497940819L;
+    private static final long serialVersionUID = -33471407383729795L;
     /**
     * 购物id
     */

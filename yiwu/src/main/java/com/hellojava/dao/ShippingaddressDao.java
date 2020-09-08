@@ -1,6 +1,7 @@
 package com.hellojava.dao;
 
 import com.hellojava.entity.Shippingaddress;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
@@ -8,8 +9,9 @@ import java.util.List;
  * 收货地址表(Shippingaddress)表数据库访问层
  *
  * @author makejava
- * @since 2020-09-03 17:04:11
+ * @since 2020-09-08 23:29:35
  */
+@Mapper
 public interface ShippingaddressDao {
 
     /**

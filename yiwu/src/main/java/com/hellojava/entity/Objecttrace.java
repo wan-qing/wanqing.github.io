@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 物迹表(Objecttrace)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:56
+ * @since 2020-09-08 23:29:34
  */
 public class Objecttrace implements Serializable {
-    private static final long serialVersionUID = -45891050682041868L;
+    private static final long serialVersionUID = -12096441334821895L;
     /**
     * 物迹id
     */

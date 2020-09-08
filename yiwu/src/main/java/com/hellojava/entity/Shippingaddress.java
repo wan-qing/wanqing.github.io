@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 收货地址表(Shippingaddress)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:56
+ * @since 2020-09-08 23:29:35
  */
 public class Shippingaddress implements Serializable {
-    private static final long serialVersionUID = -72629974026023068L;
+    private static final long serialVersionUID = -14116587044786796L;
     /**
     * 地址id
     */

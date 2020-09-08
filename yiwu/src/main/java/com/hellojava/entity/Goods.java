@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 商品表(Goods)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:56
+ * @since 2020-09-08 23:29:34
  */
 public class Goods implements Serializable {
-    private static final long serialVersionUID = 160558377049301212L;
+    private static final long serialVersionUID = -44980798800822422L;
     /**
     * 商品id
     */

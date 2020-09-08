@@ -7,10 +7,10 @@ import java.io.Serializable;
  * 评价表(Evaluate)实体类
  *
  * @author makejava
- * @since 2020-09-03 16:59:56
+ * @since 2020-09-08 23:29:34
  */
 public class Evaluate implements Serializable {
-    private static final long serialVersionUID = -39261823662537143L;
+    private static final long serialVersionUID = 364542440827825051L;
     /**
     * 评价id
     */
