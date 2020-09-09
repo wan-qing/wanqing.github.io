@@ -77,7 +77,7 @@ create table goods
     yuliu            varchar(512),
     constraint PK_GOODS primary key (goods_id),
     constraint FK_GOODS_USER foreign key (user_id) references user (user_id),
-    constraint FK_GOODS_CATEGORY foreign key (category_id) references category(category_id)
+    constraint FK_GOODS_CATEGORY foreign key (category_id) references category (category_id)
 ) comment ='商品表';
 
 
@@ -93,7 +93,7 @@ create table shippingaddress
     addr_detail    varchar(128) not null comment '详细地址',
     user_name      varchar(256) not null comment '收货人姓名',
     user_cellphone varchar(256) not null comment '收货人电话号码',
-    addresscreate  timestamp default now() comment '地址创建时间',
+    addresscreate  timestamp comment '地址创建时间',
     yuliu          varchar(512),
     constraint PK_SHIPPINGADDRESS primary key (address_id)
 ) comment ='收货地址表';

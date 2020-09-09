@@ -1452,7 +1452,6 @@
       <Position>10</Position>
       <Comment>地址创建时间</Comment>
       <DataType>timestamp|0s</DataType>
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="354" parent="234" name="yuliu">

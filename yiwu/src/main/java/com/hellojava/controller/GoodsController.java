@@ -5,6 +5,7 @@ import com.hellojava.service.GoodsService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 商品表(Goods)表控制层
@@ -30,6 +31,11 @@ public class GoodsController {
     @GetMapping("selectOne")
     public Goods selectOne(Integer id) {
         return this.goodsService.queryById(id);
+    }
+
+    @GetMapping("selectByPage")
+    public List<Goods> selectByPage(Integer page,Integer pageSize){
+        return this.goodsService.queryAllByLimit(page*pageSize,pageSize);
     }
 
 }
